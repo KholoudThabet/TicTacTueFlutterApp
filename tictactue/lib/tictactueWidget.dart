@@ -15,7 +15,7 @@ class _TicTacTueState extends State<TicTacTue> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tic Tac Tue'),
+        title: const Text('Tic Tac Tue'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -33,12 +33,12 @@ class _TicTacTueState extends State<TicTacTue> {
                   winner = '';
                 });
               },
-              child: Text('Reset'),
+              child: const Text('Reset'),
             ),
             GridView.builder(
               shrinkWrap: true,
               itemCount: 9,
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
               ),
               itemBuilder: (context, index) {
